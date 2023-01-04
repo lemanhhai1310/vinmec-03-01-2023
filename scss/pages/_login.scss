@@ -1,0 +1,53 @@
+.login{
+  &__section{
+    @include media-breakpoint-up('l'){
+      padding-top: 162px;
+    }
+    .uk-container-small{
+      max-width: 800px;
+    }
+  }
+  &__width{
+    max-width: 350px;
+  }
+  &__card{
+    border: 1px solid #F0F0F0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    &__title{
+      font-weight: 700;
+      font-family: 'Roboto', sans-serif;
+      color: #333333;
+      @include fluidx(30px,25.5px,font-size);
+      line-height: (35/30);
+    }
+    &__icon{
+      background-repeat: no-repeat;
+      background-position: center;
+      svg{
+        visibility: hidden;
+      }
+      &--user{
+        background-image: url("images/image8.png");
+      }
+      &--pass{
+        background-image: url("images/image9.png");
+      }
+    }
+    &__input{
+      font-size: 14px;
+      &::placeholder{
+        color: #666;
+      }
+    }
+    &__btnSubmit{
+      background: linear-gradient(180deg, #FFC30F 0%, rgba(255, 203, 51, 0.65) 96.87%, rgba(255, 219, 113, 0.52) 100%);
+      border: 1px solid #F3B600 !important;
+      text-transform: inherit;
+    }
+    &__txt{
+      color: #666;
+      font-size: 14px;
+      line-height: (16/14);
+    }
+  }
+}

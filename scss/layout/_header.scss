@@ -1,0 +1,15 @@
+.header{
+  border-bottom: 2.4px solid #FFC107;
+  .uk-logo{
+    img{
+      height: 50px;
+    }
+  }
+  .uk-navbar-item{
+    min-height: 60px;
+  }
+  &__txt{
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+  }
+}

@@ -1,0 +1,33 @@
+.taochuky{
+  &__link{
+    text-decoration-line: underline;
+    color: #0C8DFD;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+  }
+  &__txt{
+    color: #333333;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+  }
+  &__txt1{
+    color: #333333;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+  }
+  &__btn{
+    text-transform: inherit;
+    padding: 0 10px;
+    @include media-breakpoint-up('m'){
+      min-width: 200px;
+    }
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F0F0 100%);
+    /* DADCE0 */
+
+    border: 1px solid #DADCE0;
+    color: #333333;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+  }
+}

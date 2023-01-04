@@ -9,7 +9,8 @@
     <!--CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.19/dist/css/uikit.min.css" />
-    <!--<link rel="stylesheet" href="style.css?v=--><?php //echo(time()) ?><!--">-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css?v=<?php echo(time()) ?>">
 
     <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
@@ -17,11 +18,36 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.19/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.19/dist/js/uikit-icons.min.js"></script>
     <script src="js/app.js?v=<?php echo(time()) ?>"></script>
-    <style>
-        <?= file_get_contents('style.css'); ?>
-    </style>
 </head>
-<body class="<?= (isset($bodyClass))?$bodyClass:'' ?>">
-<?php require "template-parts/commons/facebook_chat.php"; ?>
+<body class="">
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+    <?php if (isset($is_from_login) && $is_from_login): ?>
+        <header class="header uk-background-default">
+            <div class="uk-container">
+                <nav class="uk-navbar-container uk-navbar uk-navbar-transparent" uk-navbar>
+
+                    <div class="uk-navbar-left">
+                        <a href="" class="uk-navbar-item uk-logo"><img src="images/image2.png" alt=""></a>
+                    </div>
+
+                    <div class="uk-navbar-right">
+                        <div class="uk-navbar-item">
+                            <div class="uk-grid-10 uk-flex-middle" uk-grid>
+                                <div>
+                                    <div class="uk-cover-container uk-border-circle">
+                                        <img src="images/image11.png" alt="" uk-cover="">
+                                        <canvas width="30" height="30"></canvas>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="header__txt">Nguyễn Thị Na</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+    <?php endif; ?>
